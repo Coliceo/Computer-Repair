@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <header>
+            <div class="logo">
+                <img src="Images/Logo2.webp" alt="Computer Repair">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Contact.html">Contact Us</a>
+            </nav>
+            <div class="myicons">
+                <!-- Add icon content here if needed -->
+            </div>
+        </header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computer Repair</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .column {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="https://api.web3forms.com/submit" method="post">
+        <h1>Contact Us</h1>
+        <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+      
+        <div class="column">
+          <label for="the-name">Your Name</label>
+          <input type="text" name="name" id="the-name" required>
+      
+          <label for="the-email">Email Address</label>
+          <input type="email" name="email" id="the-email" required>
+      
+          <label for="the-phone">Phone Number</label>
+          <input type="tel" name="phone" id="the-phone" required>
+      
+          <label for="the-reason">How can we help you?</label>
+          <select name="reason" id="the-reason" required>
+              <option value="">Choose one</option>
+              <option value="web">I need hardware repair</option>
+              <option value="video">I need virus removal</option>
+              <option value="3d">I need to recover my files</option>
+          </select>
+        </div>
+        <div class="column">
+          <label for="the-message">Message</label>
+          <textarea name="message" id="the-message" rows="5" required></textarea>
+          
+                    <input type="submit" value="Send Message">
+                    <input type="hidden" name="access_key" value="9c05b4d3-2434-406d-a415-b69fe05e639d"
+        </div>
+    </form>
+
+</body>
+</html>

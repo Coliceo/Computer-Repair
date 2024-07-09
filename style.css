@@ -129,7 +129,7 @@ section {
     display: block;
     background: #eee;
     transform: scale(.95);
-    position: relative;
+    position: static;
     transition: transform 250ms ease-in-out;
     text-decoration: none;
     color: #333;
@@ -166,10 +166,11 @@ section {
         padding: 3em;
         border-radius: 1em;
         margin-bottom: 3em;
-        text-align: left;
+        text-align: center;
         float: right;
-        min-width: 55em;
+        min-width: 30em;
         width: 220%;
+        box-sizing: border-box;
         text-transform: uppercase;
         text-shadow: 0 0 .2em rgba(#000, );
 
